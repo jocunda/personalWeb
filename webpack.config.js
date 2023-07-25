@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 const ReactRefreshTypeScript = require("react-refresh-typescript");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 const isDevelopment = process.env.NODE_ENV !== "production";
 const isMicroFE = process.env.IS_MICRO_FE === "true";
@@ -53,6 +54,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     isDevelopment && new ReactRefreshWebpackPlugin(),
     new MiniCssExtractPlugin(),
+    new FaviconsWebpackPlugin("./public/neko.png"),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
