@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkpersonalweb=self.webpackChunkpersonalweb||[]).push([[396],{396:function(e,n,t){t.r(n);var l=t(294),r=t(745),u=document.getElementById("root");(0,r.s)(u).render(l.createElement(l.StrictMode,null,l.createElement((function(){return l.createElement(l.Fragment,null,l.createElement("h1",null,"App123445"))}),null)))}}]);
-//# sourceMappingURL=396.js.map
