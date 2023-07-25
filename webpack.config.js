@@ -52,13 +52,18 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    isDevelopment && new ReactRefreshWebpackPlugin(),
+    new ReactRefreshWebpackPlugin(),
     new MiniCssExtractPlugin(),
     new FaviconsWebpackPlugin("./public/neko.png"),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
   ].filter(Boolean),
+  optimization: {
+    // don't minimize so we can debug
+    minimize: false,
+    runtimeChunk: "single",
+  },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },

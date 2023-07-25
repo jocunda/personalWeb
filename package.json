@@ -3,6 +3,7 @@
   "repository": {
     "url": "git+https://github.com/jocunda/web.git"
   },
+  "homepage": "http://jocunda.github.io/web",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -39,6 +40,7 @@
     "webpack-dev-server": "^4.13.2"
   },
   "dependencies": {
+    "@fluentui/react-components": "^9.26.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
     "@types/http-proxy-middleware": "^1.0.0",
     "classnames": "^2.3.2",
