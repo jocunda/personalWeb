@@ -11,7 +11,7 @@ __webpack_require__.r(__webpack_exports__);
 var react = __webpack_require__(7294);
 ;// CONCATENATED MODULE: ./src/components/AppBox/styles.module.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ var styles_module = ({"boxContainer":"ixGAUA9EHjcSPfqVnOYN"});
+/* harmony default export */ var styles_module = ({"boxContainer":"ixGAUA9EHjcSPfqVnOYN","aboutText":"AFtKkYMsI8rK81kVBGHu"});
 // EXTERNAL MODULE: ./node_modules/@fluentui/react-image/lib/components/Image/Image.js + 3 modules
 var Image = __webpack_require__(1436);
 // EXTERNAL MODULE: ./node_modules/@fluentui/react-divider/lib/components/Divider/Divider.js + 3 modules
@@ -103,7 +103,7 @@ function AppBox(props) {
             react.createElement(Divider/* Divider */.i, { inset: true }),
             react.createElement(Title2/* Title2 */.R, { align: "center" }, "Silvia Jocunda"),
             react.createElement(Text/* Text */.x, { size: 500, font: "monospace" }, "Engineer"),
-            react.createElement(Text/* Text */.x, { align: "start" }, "Self-taught programming languages for HTML, CSS, Javascript and Typescript. I have a high interest in front-end web development and design."),
+            react.createElement(Text/* Text */.x, { className: styles_module.aboutText, align: "start" }, "Self-taught programming languages for HTML, CSS, Javascript and Typescript. I have a high interest in front-end web development and design."),
             react.createElement(Divider/* Divider */.i, { inset: true }),
             react.createElement(CardFooter/* CardFooter */.e, null,
                 react.createElement(Tooltip/* Tooltip */.u, __assign({ content: "silviawanshan88@gmail.com", relationship: "label" }, props),
