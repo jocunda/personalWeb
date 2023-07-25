@@ -102,6 +102,7 @@ function AppBox(props) {
             react.createElement(Image/* Image */.E, { alt: "My avatar", shape: "circular", src: mypic_namespaceObject, height: 150, width: 150 }),
             react.createElement(Divider/* Divider */.i, { inset: true }),
             react.createElement(Title2/* Title2 */.R, { align: "center" }, "Silvia Jocunda"),
+            react.createElement(Text/* Text */.x, { size: 500, font: "monospace" }, "Engineer"),
             react.createElement(Text/* Text */.x, { align: "start" }, "Self-taught programming languages for HTML, CSS, Javascript and Typescript. I have a high interest in front-end web development and design."),
             react.createElement(Divider/* Divider */.i, { inset: true }),
             react.createElement(CardFooter/* CardFooter */.e, null,
