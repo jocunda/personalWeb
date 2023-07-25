@@ -21,13 +21,13 @@ import {
 } from "@fluentui/react-icons";
 
 //assets
-import myImage from '../../images/mypic.jpg'
+import myImage from "../../images/mypic.jpg"
 import mail1 from "../../images/icons8-mail-100.png"
-import mail2 from "../../images/icons8-mail-100 (1).png"
+import mail2 from "../../images/icons8-mail-100other.png"
 import link1 from "../../images/icons8-linkedin-100.png"
-import link2 from "../../images/icons8-linkedin-100 (1).png"
+import link2 from "../../images/icons8-linkedin-100other.png"
 import git1 from "../../images/icons8-github-100.png"
-import git2 from "../../images/icons8-github-100 (1).png"
+import git2 from "../../images/icons8-github-100other.png"
 
 //hooks
 import AppHoverImage from "../AppHoverImage/Component";
@@ -38,6 +38,7 @@ export default function AppBox(props: Partial<TooltipProps>) {
 
   return <>
     <div className={styles.boxContainer}>
+
       <Image
         alt="My avatar"
         shape="circular"
@@ -46,8 +47,11 @@ export default function AppBox(props: Partial<TooltipProps>) {
         width={150}
       />
       <Divider inset />
-      <Title2 align="center">Silvia Jocunda</Title2>
-      <Text align="start">Self-taught programming languages for HTML, CSS, Javascript and Typescript. I have a high interest in front-end web development and design.</Text>
+      <Title2 align="center" >Silvia Jocunda</Title2>
+      <Text size={500} font="monospace">Engineer</Text>
+      <Text
+        className={styles.aboutText}
+        align="start">Self-taught programming languages for HTML, CSS, Javascript and Typescript. I have a high interest in front-end web development and design.</Text>
 
       <Divider inset />
 

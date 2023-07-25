@@ -3,10 +3,16 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 550px;
+  width: 350px;
   height: 500px;
-  border-radius: 30px;
-  border: 1px black solid;
   margin: auto;
   padding: 20px;
+  border-radius: 30px;
+  border: 2px solid #9DCAEB;
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutText{
+  color: #8B8783;
 }
