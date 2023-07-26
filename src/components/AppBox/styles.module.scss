@@ -103,3 +103,14 @@
     transform: translateX(10%);
   }
 }
+
+
+.projectContainer {
+  display: block;
+  overflow: hidden;
+  transition: display 0.5s ease-in;
+}
+
+.hidden{
+  display: none;
+}

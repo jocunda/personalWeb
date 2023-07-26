@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //styles
 import "../../styles/index.scss"
@@ -17,8 +17,8 @@ import {
   bundleIcon,
   Apps24Regular,
   Apps24Filled
-
 } from "@fluentui/react-icons";
+import cx from 'classnames';
 
 //assets
 import myImage from "../../images/mypic.jpg"
@@ -28,28 +28,27 @@ import link1 from "../../images/icons8-linkedin-100.png"
 import link2 from "../../images/icons8-linkedin-100other.png"
 import git1 from "../../images/icons8-github-100.png"
 import git2 from "../../images/icons8-github-100other.png"
-import cloud1 from "../../images/cloud1.png"
-import cloud2 from "../../images/cloud2.png"
-import cloud3 from "../../images/cloud3.png"
-import cloud4 from "../../images/cloud4.png"
 
-//hooks
+//JSON data
+import cloudImages from '../../data/cloudImage'
+
 import AppHoverImage from "../AppHoverImage/Component";
+import AppProject from "../AppProject/Component";
 
 const Apps24Icon = bundleIcon(Apps24Filled, Apps24Regular);
 
 export default function AppBox(props: Partial<TooltipProps>) {
-  const cloudImages = [
-    { src: cloud1, height: 80, width: 150 },
-    { src: cloud2, height: 200, width: 600 },
-    { src: cloud3, height: 90, width: 140 },
-    { src: cloud4, height: 100, width: 190 },
-  ]
+
+
+  //button Project
+  const [showProject, setShowProject] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowProject(!showProject);
+  };
 
   return <>
-
-
-    <div className={styles.boxContainer}>
+    <div className={showProject ? cx(styles.boxContainer, styles.hidden) : styles.boxContainer}>
       <Image
         alt="My avatar"
         shape="circular"
@@ -85,12 +84,12 @@ export default function AppBox(props: Partial<TooltipProps>) {
           alt="Github icon" />
       </CardFooter>
 
-      <Button icon={<Apps24Icon />}>
+      <Button onClick={handleButtonClick} icon={<Apps24Icon />}>
         Project
       </Button>
     </div>
 
-    <div className={styles.cloudContainer}>
+    <div className={showProject ? cx(styles.cloudContainer, styles.hidden) : styles.cloudContainer}>
       {cloudImages.map((cloud, index) => (
         <Image
           key={`cloud-${index}`}
@@ -102,5 +101,10 @@ export default function AppBox(props: Partial<TooltipProps>) {
         />
       ))}
     </div>
+
+    <div className={showProject ? styles.projectContainer : cx(styles.projectContainer, styles.hidden)}>
+      <AppProject onClickStatus={handleButtonClick} />
+    </div>
+
   </>;
 }
