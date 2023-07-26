@@ -1,26 +1,19 @@
 //media-query
 @mixin respond ($breakpoint) {
-    @if $breakpoint ==large {
-        @media (max-width: 1008px) {
-            @content
-        }
+  @if $breakpoint ==large {
+    @media (max-width: 1008px) {
+      @content
+    };
+  }
 
-        ;
-    }
+  @if $breakpoint ==medium {
+    @media (max-width: 1007px) {
+      @content
+    };
+  }
 
-    @if $breakpoint ==medium {
-        @media (max-width: 1007px) {
-            @content
-        }
-
-        ;
-    }
-
-    @if $breakpoint ==small {
-        @media (max-width: 640px) {
-            @content
-        }
-
-        ;
-    }
+  @if $breakpoint ==small {
+    @media (max-width: 640px) {
+      @content};
+  }
 }

@@ -28,6 +28,10 @@ import link1 from "../../images/icons8-linkedin-100.png"
 import link2 from "../../images/icons8-linkedin-100other.png"
 import git1 from "../../images/icons8-github-100.png"
 import git2 from "../../images/icons8-github-100other.png"
+import cloud1 from "../../images/cloud1.png"
+import cloud2 from "../../images/cloud2.png"
+import cloud3 from "../../images/cloud3.png"
+import cloud4 from "../../images/cloud4.png"
 
 //hooks
 import AppHoverImage from "../AppHoverImage/Component";
@@ -35,10 +39,17 @@ import AppHoverImage from "../AppHoverImage/Component";
 const Apps24Icon = bundleIcon(Apps24Filled, Apps24Regular);
 
 export default function AppBox(props: Partial<TooltipProps>) {
+  const cloudImages = [
+    { src: cloud1, height: 80, width: 150 },
+    { src: cloud2, height: 200, width: 600 },
+    { src: cloud3, height: 90, width: 140 },
+    { src: cloud4, height: 100, width: 190 },
+  ]
 
   return <>
-    <div className={styles.boxContainer}>
 
+
+    <div className={styles.boxContainer}>
       <Image
         alt="My avatar"
         shape="circular"
@@ -77,6 +88,19 @@ export default function AppBox(props: Partial<TooltipProps>) {
       <Button icon={<Apps24Icon />}>
         Project
       </Button>
+    </div>
+
+    <div className={styles.cloudContainer}>
+      {cloudImages.map((cloud, index) => (
+        <Image
+          key={`cloud-${index}`}
+          alt="Cloud"
+          src={cloud.src}
+          height={cloud.height}
+          width={cloud.width}
+          className={styles[`cloud${index + 1}`]}
+        />
+      ))}
     </div>
   </>;
 }

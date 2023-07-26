@@ -1,3 +1,5 @@
+ @import "../../styles/mediaquery.scss";
+
 .boxContainer{
   display: flex;
   flex-direction: column;
@@ -9,10 +11,95 @@
   padding: 20px;
   border-radius: 30px;
   border: 2px solid #9DCAEB;
+  background-color: white;
   position: relative;
+  z-index: 5;
   overflow: hidden;
 }
 
 .aboutText{
   color: #8B8783;
+}
+
+.cloudContainer{
+  width: 100vw;
+  height: 100vh;
+  position:absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  .cloud1 {
+    position: relative;
+    left: 8vw;
+    animation: cloud-transit infinite ease-out 5s;
+    -webkit-animation: cloud-transit infinite ease-out 5s;
+    @include respond(medium) {
+      left: 5vw;
+    }
+  }
+  .cloud2{
+    position: relative;
+    left: -25vw;
+    top:8vh;
+    animation: cloud-transit-2 infinite ease-in-out 5s;
+    -webkit-animation: cloud-transit-2 infinite ease-in-out 5s;
+    @include respond(medium) {
+      left: -25vw;
+    }
+  }
+  .cloud3{
+    position: relative;
+    top: -28vh;
+    right: 2vw;
+    animation: cloud-transit infinite ease-in-out 5s;
+    -webkit-animation: cloud-transit infinite ease-in-out 5s;
+    @include respond(medium) {
+      
+    }
+  }
+  .cloud4 {
+    position: relative;
+    top: -33vh;
+    right: 5vw;
+    animation: cloud-transit-2 infinite ease-in-out 5s;
+    -webkit-animation: cloud-transit-2 infinite ease-in-out 5s;
+    @include respond(medium) {
+      right: 10vw;
+    }
+  }
+}
+
+@keyframes cloud-transit {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+}
+
+@keyframes cloud-transit-2 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
+  }
 }
