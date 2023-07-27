@@ -7,12 +7,10 @@ import {
   Body1,
   Caption1,
   Button,
-  Subtitle1,
 } from "@fluentui/react-components";
 import {
-  MoreHorizontal20Filled,
-  Open16Regular,
-  Share16Regular,
+  Code24Regular,
+  Globe24Regular,
   bundleIcon,
   Person24Regular,
   Person24Filled
@@ -23,6 +21,9 @@ import {
   CardHeader,
   CardPreview,
 } from "@fluentui/react-components";
+
+//JSON data
+import workImages from '../../data/workImage'
 
 const resolveAsset = (asset: string) => {
   const ASSET_URL =
@@ -40,57 +41,69 @@ const Person24Icon = bundleIcon(Person24Filled, Person24Regular);
 
 export default function AppProject({ onClickStatus }: ProjectProps) {
 
+
+  const handleClick = (url: string) => {
+    if (url) {
+      window.open(url, '_blank'); // Open the specified URL in a new tab
+    }
+  };
+
   return <>
-    <Button onClick={onClickStatus} icon={<Person24Icon />}>
+    <Button
+      appearance="primary"
+      size="large"
+      className={styles.profileButton}
+      onClick={onClickStatus}
+      icon={<Person24Icon />}>
       Profile
     </Button>
 
     <div className={styles.cardContainer}>
-      <section>
-        <Card className={styles.card}>
+      {workImages.map((work, index) => (
+        <Card className={styles.card} key={`work-${index}`}>
           <CardPreview>
             <img
-              src={resolveAsset("sales_template.png")}
-              alt="Sales Presentation Preview"
+              src={work.image}
+              alt="workImage"
             />
           </CardPreview>
 
           <CardHeader
             image={
-              <img
-                src={resolveAsset("powerpoint_logo.svg")}
-                alt="Microsoft PowerPoint logo"
-              />
+              <>
+                <img
+                  src={work.logo}
+                  alt="React"
+                  height={30}
+                />
+                {work.secondLogo ? <img
+                  src={work.secondLogo}
+                  alt="React"
+                  height={30}
+                /> : ""}
+              </>
             }
             header={
               <Body1>
-                <b>App Name</b>
+                <b>{work.title}</b>
               </Body1>
             }
-            description={<Caption1>Developer</Caption1>}
-            action={
-              <Button
-                appearance="transparent"
-                icon={<MoreHorizontal20Filled />}
-                aria-label="More options"
-              />
-            }
+            description={<Caption1>{work.framework}</Caption1>}
           />
 
           <p className={styles.text}>
-            Donut chocolate bar oat cake. Dragée tiramisu lollipop bear claw.
-            Marshmallow pastry jujubes toffee sugar plum.
+            {work.text}
           </p>
 
           <CardFooter>
-            <Button appearance="primary" icon={<Open16Regular />}>
-              Open
+            <Button onClick={() => handleClick(work.codeLink)} icon={<Code24Regular />}>
+              Code
             </Button>
-            <Button icon={<Share16Regular />}>Share</Button>
+            {work.link ? <Button onClick={() => work.link ? handleClick(work.link) : null} icon={<Globe24Regular />}>Deploy</Button> : ""}
           </CardFooter>
         </Card>
-      </section>
-
+      ))}
     </div>
+
   </>;
 }
