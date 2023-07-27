@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkpersonalweb"] = self["webpackChunkpersonalweb"] || []).push([[828],{
+(self["webpackChunkpersonalweb"] = self["webpackChunkpersonalweb"] || []).push([[177],{
 
-/***/ 7541:
+/***/ 8531:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 // ESM COMPAT FLAG
@@ -93,23 +93,118 @@ function AppHoverImage(_a) {
 
 ;// CONCATENATED MODULE: ./src/components/AppProject/styles.module.scss
 // extracted by mini-css-extract-plugin
-/* harmony default export */ var AppProject_styles_module = ({"cardContainer":"U4U7cNfOZN18dVp_PkNv","card":"l71vBqL7jtnrKkF3ATCe"});
+/* harmony default export */ var AppProject_styles_module = ({"profileButton":"WJMy723SiNdIKENF8BMQ","cardContainer":"U4U7cNfOZN18dVp_PkNv","card":"l71vBqL7jtnrKkF3ATCe","text":"brT04i9qUPk4zYHjpqiM"});
 // EXTERNAL MODULE: ./node_modules/@fluentui/react-text/lib/components/presets/Body1/Body1.js + 1 modules
 var Body1 = __webpack_require__(6618);
 // EXTERNAL MODULE: ./node_modules/@fluentui/react-text/lib/components/presets/Caption1/Caption1.js + 1 modules
 var Caption1 = __webpack_require__(1317);
 // EXTERNAL MODULE: ./node_modules/@fluentui/react-icons/lib/sizedIcons/chunk-9.js
 var chunk_9 = __webpack_require__(3266);
-// EXTERNAL MODULE: ./node_modules/@fluentui/react-icons/lib/sizedIcons/chunk-8.js
-var chunk_8 = __webpack_require__(4125);
-// EXTERNAL MODULE: ./node_modules/@fluentui/react-icons/lib/sizedIcons/chunk-10.js
-var chunk_10 = __webpack_require__(368);
+// EXTERNAL MODULE: ./node_modules/@fluentui/react-icons/lib/sizedIcons/chunk-3.js
+var chunk_3 = __webpack_require__(3973);
+// EXTERNAL MODULE: ./node_modules/@fluentui/react-icons/lib/sizedIcons/chunk-6.js
+var chunk_6 = __webpack_require__(5616);
 // EXTERNAL MODULE: ./node_modules/@fluentui/react-card/lib/components/Card/Card.js + 13 modules
 var Card = __webpack_require__(5951);
 // EXTERNAL MODULE: ./node_modules/@fluentui/react-card/lib/components/CardPreview/CardPreview.js + 3 modules
 var CardPreview = __webpack_require__(6107);
 // EXTERNAL MODULE: ./node_modules/@fluentui/react-card/lib/components/CardHeader/CardHeader.js + 3 modules
 var CardHeader = __webpack_require__(8072);
+;// CONCATENATED MODULE: ./src/images/workimage1.jpg
+var workimage1_namespaceObject = __webpack_require__.p + "images/4c6a5b5b61fc90ca0fe6.jpg";
+;// CONCATENATED MODULE: ./src/images/workimage2.jpg
+var workimage2_namespaceObject = __webpack_require__.p + "images/cfec477cf5d03e105850.jpg";
+;// CONCATENATED MODULE: ./src/images/workimage3.jpg
+var workimage3_namespaceObject = __webpack_require__.p + "images/86993f22096bcf232d1c.jpg";
+;// CONCATENATED MODULE: ./src/images/workimage4.jpg
+var workimage4_namespaceObject = __webpack_require__.p + "images/4b6aea76e4cfc7503696.jpg";
+;// CONCATENATED MODULE: ./src/images/workimage5.jpg
+var workimage5_namespaceObject = __webpack_require__.p + "images/1db3d3e699555e2dc0b0.jpg";
+;// CONCATENATED MODULE: ./src/images/workimage-blank.jpg
+var workimage_blank_namespaceObject = __webpack_require__.p + "images/e53da2dae7f9fc3df57f.jpg";
+;// CONCATENATED MODULE: ./src/images/framework-nodejs.svg
+var framework_nodejs_namespaceObject = __webpack_require__.p + "images/3dc364b8e9beb3561620.svg";
+;// CONCATENATED MODULE: ./src/images/framework-react.svg
+var framework_react_namespaceObject = __webpack_require__.p + "images/ae62622598f39552abdc.svg";
+;// CONCATENATED MODULE: ./src/images/framework-mysql.svg
+var framework_mysql_namespaceObject = __webpack_require__.p + "images/e5a509a5d3ca7443ae6c.svg";
+;// CONCATENATED MODULE: ./src/data/workImage.ts
+//import image
+
+
+
+
+
+
+//import logo
+
+
+
+var workImages = [
+    {
+        image: workimage_blank_namespaceObject,
+        logo: framework_react_namespaceObject,
+        title: "Web FrontEnd [ongoing]",
+        text: "Frontend app that utilize microFE library such as Lerna and build to have CRUD function.",
+        framework: "React 18.2.0 Webpack",
+        codeLink: "https://github.com/jocunda/RicherGoFE",
+    },
+    {
+        image: workimage_blank_namespaceObject,
+        logo: framework_nodejs_namespaceObject,
+        secondLogo: framework_mysql_namespaceObject,
+        title: "Web BackEnd API [ongoing]",
+        text: "Backend to support CRUD app.",
+        framework: "Express JS + MySQL",
+        codeLink: "https://github.com/jocunda/ExpressBE",
+        link: "https://express-be-bewzsluhh-jocunda.vercel.app/",
+    },
+    {
+        image: workimage5_namespaceObject,
+        logo: framework_react_namespaceObject,
+        title: "Calculator",
+        text: "Basic calculator operation with theme changer for light and dark. Have basic calculator operation such as plus, minus, divide and multiple.",
+        framework: "React 18.2.0 CRA",
+        codeLink: "https://github.com/jocunda/calculator",
+        link: "https://jocunda.github.io/calculator/",
+    },
+    {
+        image: workimage4_namespaceObject,
+        logo: framework_react_namespaceObject,
+        title: "Clock",
+        text: "Challenge from Frontend Mentor, that using external APIs to set data based on visitor's location and generate random programming quotes.",
+        framework: "React 18.0.2 CRA",
+        codeLink: "https://github.com/jocunda/clock",
+        link: "https://jocunda.github.io/clock/",
+    },
+    {
+        image: workimage3_namespaceObject,
+        logo: framework_react_namespaceObject,
+        title: "Little Lemon",
+        text: "Project from course Front-End Developer by Meta, which requirement is to build website of homepage and reservation form for Little Lemon Restaurant.",
+        framework: "React 18.0.2 CRA",
+        codeLink: "https://github.com/jocunda/littlelemonrestaurant",
+    },
+    {
+        image: workimage2_namespaceObject,
+        logo: framework_react_namespaceObject,
+        title: "Price Grid Component",
+        text: "Newbie challenge from frontend mentor, to build out the pricing component to the design provided. This can practice CSS feature such as flexbox, grid and responsive web design.",
+        framework: "React 18.2.0 CRA",
+        codeLink: "https://github.com/jocunda/FM-price_grid",
+    },
+    {
+        image: workimage1_namespaceObject,
+        logo: framework_react_namespaceObject,
+        title: "3D Earth",
+        text: "Web 3D project that using library such as react-three/drei, react-three/fiber. Simulate earth which surface material, cloudy map, and controlled option.",
+        framework: "React 17.0.2 CRA",
+        codeLink: "https://github.com/jocunda/React-Globe",
+        link: "https://jocunda.github.io/React-Globe/",
+    },
+];
+/* harmony default export */ var workImage = (workImages);
+
 ;// CONCATENATED MODULE: ./src/components/AppProject/Component.tsx
 
 //styles
@@ -118,26 +213,29 @@ var CardHeader = __webpack_require__(8072);
 
 
 
-var resolveAsset = function (asset) {
-    var ASSET_URL = "https://raw.githubusercontent.com/microsoft/fluentui/master/packages/react-components/react-card/stories/assets/";
-    return "".concat(ASSET_URL).concat(asset);
-};
+//JSON data
+
 var Person24Icon = (0,bundleIcon/* default */.Z)(chunk_9/* Person24Filled */.E9z, chunk_9/* Person24Regular */.wxB);
 function AppProject(_a) {
     var onClickStatus = _a.onClickStatus;
+    var handleClick = function (url) {
+        if (url) {
+            window.open(url, '_blank'); // Open the specified URL in a new tab
+        }
+    };
     return react.createElement(react.Fragment, null,
-        react.createElement(Button/* Button */.z, { onClick: onClickStatus, icon: react.createElement(Person24Icon, null) }, "Profile"),
-        react.createElement("div", { className: AppProject_styles_module.cardContainer },
-            react.createElement("section", null,
-                react.createElement(Card/* Card */.Z, { className: AppProject_styles_module.card },
-                    react.createElement(CardPreview/* CardPreview */.f, null,
-                        react.createElement("img", { src: resolveAsset("sales_template.png"), alt: "Sales Presentation Preview" })),
-                    react.createElement(CardHeader/* CardHeader */.O, { image: react.createElement("img", { src: resolveAsset("powerpoint_logo.svg"), alt: "Microsoft PowerPoint logo" }), header: react.createElement(Body1/* Body1 */.m, null,
-                            react.createElement("b", null, "App Name")), description: react.createElement(Caption1/* Caption1 */.d, null, "Developer"), action: react.createElement(Button/* Button */.z, { appearance: "transparent", icon: react.createElement(chunk_8/* MoreHorizontal20Filled */.wii, null), "aria-label": "More options" }) }),
-                    react.createElement("p", { className: AppProject_styles_module.text }, "Donut chocolate bar oat cake. Drag\u00E9e tiramisu lollipop bear claw. Marshmallow pastry jujubes toffee sugar plum."),
-                    react.createElement(CardFooter/* CardFooter */.e, null,
-                        react.createElement(Button/* Button */.z, { appearance: "primary", icon: react.createElement(chunk_8/* Open16Regular */.HUI, null) }, "Open"),
-                        react.createElement(Button/* Button */.z, { icon: react.createElement(chunk_10/* Share16Regular */.dEu, null) }, "Share"))))));
+        react.createElement(Button/* Button */.z, { appearance: "primary", size: "large", className: AppProject_styles_module.profileButton, onClick: onClickStatus, icon: react.createElement(Person24Icon, null) }, "Profile"),
+        react.createElement("div", { className: AppProject_styles_module.cardContainer }, workImage.map(function (work, index) { return (react.createElement(Card/* Card */.Z, { className: AppProject_styles_module.card, key: "work-".concat(index) },
+            react.createElement(CardPreview/* CardPreview */.f, null,
+                react.createElement("img", { src: work.image, alt: "workImage" })),
+            react.createElement(CardHeader/* CardHeader */.O, { image: react.createElement(react.Fragment, null,
+                    react.createElement("img", { src: work.logo, alt: "React", height: 30 }),
+                    work.secondLogo ? react.createElement("img", { src: work.secondLogo, alt: "React", height: 30 }) : ""), header: react.createElement(Body1/* Body1 */.m, null,
+                    react.createElement("b", null, work.title)), description: react.createElement(Caption1/* Caption1 */.d, null, work.framework) }),
+            react.createElement("p", { className: AppProject_styles_module.text }, work.text),
+            react.createElement(CardFooter/* CardFooter */.e, null,
+                react.createElement(Button/* Button */.z, { onClick: function () { return handleClick(work.codeLink); }, icon: react.createElement(chunk_3/* Code24Regular */.WB7, null) }, "Code"),
+                work.link ? react.createElement(Button/* Button */.z, { onClick: function () { return work.link ? handleClick(work.link) : null; }, icon: react.createElement(chunk_6/* Globe24Regular */.BDD, null) }, "Deploy") : ""))); })));
 }
 
 ;// CONCATENATED MODULE: ./src/components/AppBox/Component.tsx
@@ -229,4 +327,4 @@ root.render(react.createElement(react.StrictMode, null,
 /***/ })
 
 }]);
-//# sourceMappingURL=828.js.map
+//# sourceMappingURL=177.js.map
