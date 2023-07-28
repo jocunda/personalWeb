@@ -17,16 +17,12 @@
   padding:50px;
   margin-top: 50px;
 
-  @include respond(medium) {
-    
-  }
-
-  @include respond(small) {
-    justify-content: center;
-  }
 
   .card{
     width: 320px;
+    @include respond(small) {
+      width: 280px;
+    }
   }
   .text{
     text-align: justify;
