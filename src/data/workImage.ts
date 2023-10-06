@@ -10,6 +10,8 @@ import blank from "../images/workimage-blank.jpg";
 import express from "../images/framework-nodejs.svg";
 import react from "../images/framework-react.svg";
 import mysql from "../images/framework-mysql.svg";
+import remix from "../images/framework-remix.svg";
+import netcore from "../images/framework-netcore.svg";
 
 type WorkImageProps = {
   image: string;
@@ -25,8 +27,24 @@ type WorkImageProps = {
 const workImages: WorkImageProps[] = [
   {
     image: blank,
+    logo: remix,
+    title: "Web FrontEnd-Remix",
+    text: "Frontend that build using light and faster framework remix to have CRUD function, combine with Tailwind css as main styler.",
+    framework: "Remix 2.0.1 ",
+    codeLink: "https://github.com/jocunda/myRemixFE",
+  },
+  {
+    image: blank,
+    logo: netcore,
+    title: "Web BackEnd API- NETCore ",
+    text: "Backend to support CRUD app, use C# language.",
+    framework: ".NET + MSSQL",
+    codeLink: "https://github.com/jocunda/RicherBE",
+  },
+  {
+    image: blank,
     logo: react,
-    title: "Web FrontEnd [ongoing]",
+    title: "Web FrontEnd-Webpack React ",
     text: "Frontend app that utilize microFE library such as Lerna and build to have CRUD function.",
     framework: "React 18.2.0 Webpack",
     codeLink: "https://github.com/jocunda/RicherGoFE",
@@ -35,7 +53,7 @@ const workImages: WorkImageProps[] = [
     image: blank,
     logo: express,
     secondLogo: mysql,
-    title: "Web BackEnd API [ongoing]",
+    title: "Web BackEnd API-Express ",
     text: "Backend to support CRUD app.",
     framework: "Express JS + MySQL",
     codeLink: "https://github.com/jocunda/ExpressBE",
