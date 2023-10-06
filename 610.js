@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunkpersonalweb"] = self["webpackChunkpersonalweb"] || []).push([[177],{
+(self["webpackChunkpersonalweb"] = self["webpackChunkpersonalweb"] || []).push([[610],{
 
-/***/ 8531:
+/***/ 7339:
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 // ESM COMPAT FLAG
@@ -128,6 +128,10 @@ var framework_nodejs_namespaceObject = __webpack_require__.p + "images/3dc364b8e
 var framework_react_namespaceObject = __webpack_require__.p + "images/ae62622598f39552abdc.svg";
 ;// CONCATENATED MODULE: ./src/images/framework-mysql.svg
 var framework_mysql_namespaceObject = __webpack_require__.p + "images/e5a509a5d3ca7443ae6c.svg";
+;// CONCATENATED MODULE: ./src/images/framework-remix.svg
+var framework_remix_namespaceObject = __webpack_require__.p + "images/a36e2ec84d9175992e65.svg";
+;// CONCATENATED MODULE: ./src/images/framework-netcore.svg
+var framework_netcore_namespaceObject = __webpack_require__.p + "images/97f78a4850d6a3bc4e99.svg";
 ;// CONCATENATED MODULE: ./src/data/workImage.ts
 //import image
 
@@ -140,11 +144,29 @@ var framework_mysql_namespaceObject = __webpack_require__.p + "images/e5a509a5d3
 
 
 
+
+
 var workImages = [
     {
         image: workimage_blank_namespaceObject,
+        logo: framework_remix_namespaceObject,
+        title: "Web FrontEnd-Remix",
+        text: "Frontend that build using light and faster framework remix to have CRUD function, combine with Tailwind css as main styler.",
+        framework: "Remix 2.0.1 ",
+        codeLink: "https://github.com/jocunda/myRemixFE",
+    },
+    {
+        image: workimage_blank_namespaceObject,
+        logo: framework_netcore_namespaceObject,
+        title: "Web BackEnd API- NETCore ",
+        text: "Backend to support CRUD app, use C# language.",
+        framework: ".NET + MSSQL",
+        codeLink: "https://github.com/jocunda/RicherBE",
+    },
+    {
+        image: workimage_blank_namespaceObject,
         logo: framework_react_namespaceObject,
-        title: "Web FrontEnd [ongoing]",
+        title: "Web FrontEnd-Webpack React ",
         text: "Frontend app that utilize microFE library such as Lerna and build to have CRUD function.",
         framework: "React 18.2.0 Webpack",
         codeLink: "https://github.com/jocunda/RicherGoFE",
@@ -153,7 +175,7 @@ var workImages = [
         image: workimage_blank_namespaceObject,
         logo: framework_nodejs_namespaceObject,
         secondLogo: framework_mysql_namespaceObject,
-        title: "Web BackEnd API [ongoing]",
+        title: "Web BackEnd API-Express ",
         text: "Backend to support CRUD app.",
         framework: "Express JS + MySQL",
         codeLink: "https://github.com/jocunda/ExpressBE",
@@ -327,4 +349,4 @@ root.render(react.createElement(react.StrictMode, null,
 /***/ })
 
 }]);
-//# sourceMappingURL=177.js.map
+//# sourceMappingURL=610.js.map
